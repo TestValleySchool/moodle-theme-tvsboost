@@ -23,5 +23,34 @@
  */
 // This line protects the file from being accessed by a URL directly.                                                               
 defined('MOODLE_INTERNAL') || die();
- 
-// We will add callbacks here as we add features to our theme.
+
+function theme_tvsboost_get_main_scss_content($theme) {
+	global $CFG;
+
+	$scss = '';
+	$filename = !empty($theme->settings->preset) ? $theme->settings->preset : null;
+
+	$fs = get_file_storage();
+
+	$context = context_system::instance();
+
+	if ('default.scss' == $filename) {
+		// load default preset files directly from boost.
+		$scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/default.scss');
+	}
+	else if ('plain.scss' == $filename) {
+		$scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/plain.scss');
+	}
+	else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_tvsboost', 'preset', 0, '/', $filename))) {
+		$scss .= $presetfile->get_content();
+	}
+	else {
+		$scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/default.scss');
+	}
+
+	$pre = file_get_contents($CFG->dirroot . '/theme/tvsboost/scss/pre.scss');
+	$post = file_get_contents($CFG->dirroot . '/theme/tvsboost/scss/post.scss');
+
+
+	return $pre . PHP_EOL . $scss . PHP_EOL . $post;
+}
