@@ -1,0 +1,34 @@
+#tvs-switchboard span.fa-2x {
+	display: none;
+}
+
+#tvs-switchboard li {
+	list-style-type: none;
+	margin-bottom: 11px;
+}
+
+#tvs-switchboard li a {
+	color: #008357;
+	text-decoration: none;
+}
+
+hr {
+	display: none !important;
+}
+
+.main-moodle-logo-text {
+	display: none;
+}
+
+.main-moodle-logo {
+	display: none;
+	max-height: 50px;
+}
+
+.tvs-sw-small-only {
+	display: none;
+}
+
+#tvs-search-course-form {
+	display: none;
+}
