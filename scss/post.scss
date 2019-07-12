@@ -18,6 +18,13 @@ body#page-site-index.editing {
 	}
 }
 
+/* hamburger */
+div[data-region="drawer-toggle"] > button.btn {
+	background-color: #008357 !important;
+	color: #fff !important;
+
+}
+
 .card {
 	border-radius: 2px;
 
