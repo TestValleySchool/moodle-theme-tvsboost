@@ -246,9 +246,9 @@ nav.navbar {
   }
 
   #tvs-switchboard li {
-    font-size: 90%;
-    width: 80px;
-    padding: 7px;
+    font-size: 85%;
+    width: 110px;
+    padding: 0;
     height: 76px;
   }
 
@@ -606,10 +606,36 @@ nav .nav-item .nav-link .fa-bell {
 			min-width: 600px;
 		}
 	}
+	h2 {
+		display: none;
+	}
 	h3 {
-		padding-bottom: 7px;
+		padding: 15px 0;
 		margin-bottom: 20px;
 	}
 }
 
+/* calendar clickable days */
+.day a[data-action="view-day-link"] {
+	background-color: #a9f59c;
+	padding: 5px 10px;
+	border-radius: 10px;
+	font-size: 130%;
+	@media only screen and (max-width: 766px) {
+		padding: 15px 25px;
+		font-size: 150%;
+		font-weight: bold;
+		animation-name: cal-link-pulse;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+	&:hover {
+		 
+	}
+}
 
+@keyframes cal-link-pulse {
+	0% { background-color: #a9f59c; }
+	50% { background-color: #8be77c; }
+	100% { background-color: #a9f59c; }
+}
