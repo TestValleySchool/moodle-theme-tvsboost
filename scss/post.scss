@@ -634,6 +634,11 @@ nav .nav-item .nav-link .fa-bell {
 	}
 }
 
+/* Hamburger custom menu jump */
+nav.list-group[aria-label="Site"]::after {
+	content: "Menu";
+}
+
 @keyframes cal-link-pulse {
 	0% { background-color: #a9f59c; }
 	50% { background-color: #8be77c; }
