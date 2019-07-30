@@ -82,6 +82,15 @@ nav.navbar {
   display: grid;
 }
 
+/* IE 11 specific */
+@media all and (-ms-high-contrast:none), (-ms-high-contrast: active) {
+	#tvs-switchboard {
+		li {
+			display: table-cell;
+		}
+	}
+}
+
 #tvs-switchboard li {
   width: 180px;
   padding: 10px;
