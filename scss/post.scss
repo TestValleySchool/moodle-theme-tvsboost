@@ -70,7 +70,7 @@ nav.navbar {
 }
 
 /** TODO -- SCSS this */
-#tvs-switchboard {
+.tvs-switchboard {
   font-size:120%;
   padding: 8px;
   margin: 16px auto 16px auto;
@@ -84,14 +84,14 @@ nav.navbar {
 
 /* IE 11 specific */
 @media all and (-ms-high-contrast:none), (-ms-high-contrast: active) {
-	#tvs-switchboard {
+	.tvs-switchboard {
 		li {
 			display: table-cell;
 		}
 	}
 }
 
-#tvs-switchboard li {
+.tvs-switchboard li {
   width: 180px;
   padding: 10px;
   &:nth-child(1) {
@@ -132,13 +132,13 @@ nav.navbar {
   }
 }
 
-#tvs-switchboard span.fa-2x {
+.tvs-switchboard span.fa-2x {
   font-size: 3em;
   font-weight: normal !important;
 }
 
 
-#tvs-switchboard h3 {
+.tvs-switchboard h3 {
   text-align: center;
   font-size: 1.2em;
   font-weight: 600;
@@ -147,15 +147,15 @@ nav.navbar {
 }
 
 
-#tvs-switchboard a {
+.tvs-switchboard a {
   color: rgb(0,131,87);
   text-decoration: none;
 }
-#tvs-switchboard a:hover {
+.tvs-switchboard a:hover {
   color: rgb(81,172,36);
   text-decoration: none;
 }
-#tvs-switchboard a:active {
+.tvs-switchboard a:active {
   color: #E92941;
   text-decoration: none;
 }
@@ -184,17 +184,17 @@ nav.navbar {
 	-moz-user-select: none;
 }
 @media (max-width: 999px) {
-  #tvs-switchboard li {
+  .tvs-switchboard li {
     width: 100px;
     height: 111px;
   }
-  #tvs-switchboard .tvs-sw-smaller {
+  .tvs-switchboard .tvs-sw-smaller {
     display: none;
   }
-  #tvs-switchboard .tvs-sw-small-only {
+  .tvs-switchboard .tvs-sw-small-only {
     display: block;
   }
-  #tvs-switchboard h3 {
+  .tvs-switchboard h3 {
     font-size: 0.9em;
   }
 
@@ -210,33 +210,33 @@ nav.navbar {
 }
 
 @media (min-width: 1000px) and (max-width: 1187px) {
-  #tvs-switchboard li {
+  .tvs-switchboard li {
     width: 110px;
     height: 111px;
   }
-  #tvs-switchboard .tvs-sw-smaller {
+  .tvs-switchboard .tvs-sw-smaller {
     display: none;
   }
-  #tvs-switchboard .tvs-sw-small-only {
+  .tvs-switchboard .tvs-sw-small-only {
     display: block;
   }
-  #tvs-switchboard h3 {
+  .tvs-switchboard h3 {
     font-size: 0.9em;
   }
 }
 
 @media (min-width: 1188px) and (max-width: 1474px) {
-  #tvs-switchboard li {
+  .tvs-switchboard li {
     width: 130px;
     height: 111px;
   }
-  #tvs-switchboard h3 {
+  .tvs-switchboard h3 {
     font-size: 0.9em;
   }
-  #tvs-switchboard .tvs-sw-smaller {
+  .tvs-switchboard .tvs-sw-smaller {
     display: none;
   }
-  #tvs-switchboard .tvs-sw-small-only {
+  .tvs-switchboard .tvs-sw-small-only {
     display: block;
   }
 
@@ -250,22 +250,22 @@ nav.navbar {
     margin-right: -40px;
   }
 
-  #tvs-switchboard {
+  .tvs-switchboard {
     width: 93%;
   }
 
-  #tvs-switchboard li {
+  .tvs-switchboard li {
     font-size: 85%;
     width: 110px;
     padding: 0;
     height: 76px;
   }
 
-  #tvs-switchboard .tvs-sw-smaller {
+  .tvs-switchboard .tvs-sw-smaller {
     display: none;
   }
 
-  #tvs-switchboard h3 {
+  .tvs-switchboard h3 {
     font-size: 84%;
     line-height: 1;
   }
