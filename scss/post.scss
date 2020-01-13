@@ -653,6 +653,11 @@ nav .nav-item .nav-link .fa-bell {
 	}
 }
 
+/* Questionnnaire */
+.qn-container .smalltext {
+	font-size: .9em !important;
+}
+
 /* Hamburger custom menu jump */
 /*nav.list-group[aria-label="Site"]::after {
 	content: "Menu";
@@ -662,4 +667,11 @@ nav .nav-item .nav-link .fa-bell {
 	0% { background-color: #a9f59c; }
 	50% { background-color: #8be77c; }
 	100% { background-color: #a9f59c; }
+}
+
+.hlt-duedate {
+	background-color: rgba(255,242,113,0.7);
+}
+.hlt-setdate {
+	background-color: rgba(235, 138, 255, 0.7);
 }

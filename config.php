@@ -70,4 +70,7 @@ $THEME->scss = function($theme) {
 	return theme_tvsboost_get_main_scss_content($theme);
 };
 
-
+// add javascript for HLT event styles
+$THEME->javascripts_footer[] = 'jquery.countup';
+$THEME->javascripts_footer[] = 'jquery.cookie';
+$THEME->javascripts_footer[] = 'hlteventstyle';
