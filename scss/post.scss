@@ -34,7 +34,8 @@ div[data-region="drawer-toggle"] > button.btn {
 }
 
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-weight: 600;
+	font-family: 'Nunito Sans';
+	font-weight: bold;
 }
 
 a {
@@ -75,7 +76,7 @@ nav.navbar {
   padding: 8px;
   margin: 16px auto 16px auto;
   text-shadow:#cfcfcf 2px 2px 3px;
-  font-family: 'Open Sans','Trebuchet MS',Arial,sans-serif;
+  font-family: 'Nunito Sans','Open Sans','Trebuchet MS',Arial,sans-serif;
   list-style: none;
   max-width: 1000px;
   text-align: center;
@@ -142,8 +143,8 @@ nav.navbar {
 .tvs-switchboard h3 {
   text-align: center;
   font-size: 1.2em;
-  font-weight: 600;
-  font-family: 'Open Sans Semibold','Open Sans','Trebuchet MS',Arial,sans-serif;
+  font-weight: bold;
+  font-family: 'Nunito Sans','Open Sans Semibold','Open Sans','Trebuchet MS',Arial,sans-serif;
   text-shadow: none;
 }
 
@@ -174,7 +175,7 @@ nav.navbar {
   display: none;
 }
 .main-moodle-logo-text {
-	font-family: 'Open Sans','Trebuchet MS',Arial,sans-serif;
+	font-family: 'Nunito Sans','Open Sans','Trebuchet MS',Arial,sans-serif;
 	font-size: 36pt;
 	font-weight: 700;
 	color: #008357;
@@ -419,8 +420,8 @@ nav.navbar {
 }
 
 #main-hlt-page h2 {
-	font-family: 'Open Sans Semibold','Open Sans','Trebuchet MS',sans-serif;
-	font-weight: 600;
+	font-family: 'Nunito Sans','Open Sans Semibold','Open Sans','Trebuchet MS',sans-serif;
+	font-weight: 700;
 	color: #008357;
 }
 #main-hlt-page aside {
@@ -534,7 +535,7 @@ nav.navbar {
 
 /* course category description areas (careers options) */
 #page-course-index-category .generalbox.info {
-	font-family:'Open Sans','Trebuchet MS',sans-serif;
+	font-family:'Nunito Sans','Open Sans','Trebuchet MS',sans-serif;
 	/*background-color: #69b7e9;*/
 	background-color: #a8d0ea;
 	background: linear-gradient(to right, #a8d0ea 0%,#a8d0ea 90%,#ffffff 100%,#7db9e8 100%);
